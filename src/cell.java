@@ -1,10 +1,17 @@
-public class cell {
+public class Cell {
     private int x;
-    private int  y;
+    private int y;
+    private boolean isAlive;
 
-    public cell() {
-        int x = 400;
-        int  y = 600;
+    public Cell(int x, int y , boolean isAlive) {
+
+        this.x =x;
+        this.y =y;
+        this.isAlive = isAlive;
+    }
+
+    public boolean isAlive() {
+        return isAlive;
     }
 
     public int getX() {
@@ -23,4 +30,5 @@ public class cell {
         this.y = y;
     }
 }
+
 
